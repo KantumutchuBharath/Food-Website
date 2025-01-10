@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+
+
+    <div class="menu" id="Menu">
+        <h1>Our<span>Menu</span></h1>
+        <div class="menu_box">
+            <!-- Sample Item with Add to Cart -->
+            <div class="menu_card">
+                <div class="menu_image">
+                    <img src="image/buger.jpg">
+                </div>
+                <div class="menu_info">
+                    <h2>Burger</h2>
+                    <h3>₹250</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn" onclick="addToCart('Burger', 250)">Add to Cart</a>
+                </div>
+            </div>
+         
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/pasta.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Pasta</h2>
+                    <h3>₹50</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn" onclick="addToCart('Pasta', 50)">Add to Cart</a>
+
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/lasagna.webp">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Lasagna</h2>
+                    <h3>₹250</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn" onclick="addToCart('lasagna', 250)">Add to Cart</a>
+
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/chocolate_Drink.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Drink</h2>
+                 
+                    <h3>₹40</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn" onclick="addToCart('Drink', 40)">Add to Cart</a>
+
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/pizza.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Pizza</h2>
+                 
+                    <h3>₹150</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn" onclick="addToCart('Pizza', 150)">Add to Cart</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/Hot_dog.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Hot Dog</h2>
+                    
+                    <h3>₹35</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn" onclick="addToCart('Hot Dog', 35)">Add to Cart</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/juse.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Lemon juice</h2>
+                    
+                    <h3>₹75</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn" onclick="addToCart('Lemon juice', 75)">Add to Cart</a>                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/biryani.webp">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Biryani</h2>
+                  
+                    <h3>₹200</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn" onclick="addToCart('Biryani', 200)">Add to Cart</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/chocolate.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Chocolate</h2>
+                    
+                    <h3>₹45</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn" onclick="addToCart('Chocolate', 45)">Add to Cart</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/ice_cream.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Ice Cream</h2>
+                    
+                    <h3>₹60</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn" onclick="addToCart('Ice Cream', 60)">Add to Cart</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/Spanchi.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Cup Cake</h2>
+                    
+                    <h3>₹25</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn" onclick="addToCart('Cup Cake', 25)">Add to Cart</a>
+                </div>
+
+            </div> 
+
+            <div class="menu_card">
+
+                <div class="menu_image">
+                    <img src="image/sandwich.jpg">
+                </div>
+
+                <div class="small_card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <div class="menu_info">
+                    <h2>Sandwich</h2>
+                    
+                    <h3>₹50</h3>
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="menu_btn" onclick="addToCart('Sandwich', 50)">Add to Cart</a>
+                </div>
+
+            </div> 
+            
+        </div>
+
+    </div>
+
+    <li><a href="javascript:void(0);" onclick="goToCart()"></a></li>
+
+ <!-- Add Cart Section -->
+
+ <div id="cart-section">
+    <h2>Your Cart</h2>
+    <div id="cartItems"></div>
+    <h3 id="cartTotal">Total: ₹0</h3>
+   <button id="payNowButton" onclick="showPaymentForm()">Proceed to payment</button>
+</div>
+
+<!-- Payment Form Modal -->
+
+<div id="paymentForm" style="display:none; border: 1px solid black; padding: 20px;">
+    <h2>Enter Billing Information</h2>
+    <form id="billingForm" onsubmit="processPayment(event)">
+        <label for="name">Name on Card:</label>
+        <input type="text" id="name" required><br><br>
+
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" required pattern="\d{16}" maxlength="16"><br><br>
+
+        <label for="expiry">Expiry Date (MM/YY):</label>
+        <input type="text" id="expiry" required pattern="\d{2}/\d{2}" maxlength="5"><br><br>
+
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" required pattern="\d{3}" maxlength="3"><br><br>
+
+        <button type="submit">Submit Payment</button>
+    </form>
+</div>
+
+    <!-- Payment Success Message -->
+    <div id="paymentSuccessMessage" style="display:none; border: 1px solid green; padding: 20px;">
+        <h2>Payment Successful</h2>
+        <p id="confirmationMessage"></p>
+    </div>
+
+    <!-- Menu Section (existing) -->
+    <div class="menu" id="Menu">
+        <!-- Menu items as in your original code -->
+    </div>
+
+    <script>
+        let cart = [];
+
+        function addToCart(itemName, itemPrice) {
+            let item = { name: itemName, price: itemPrice };
+            cart.push(item);
+            alert(`${itemName} added to cart!`);
+            updateCartDisplay();
+            // Removed scrollIntoView() to prevent scrolling to the top
+            // Prevent page from going to the top when adding items
+            event.preventDefault(); // This prevents any potential form submissions or link redirects
+        }
+
+        function updateCartDisplay() {
+            let cartContainer = document.getElementById("cartItems");
+            cartContainer.innerHTML = "";
+            cart.forEach((item, index) => {
+                cartContainer.innerHTML += `<p>${item.name} - ₹${item.price} <button onclick="removeFromCart(${index})">Remove</button></p>`;
+            });
+            document.getElementById("cartTotal").innerText = "Total: ₹" + cart.reduce((total, item) => total + item.price, 0);
+        }
+
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            updateCartDisplay();
+        }
+
+        function showPaymentForm() {
+            var totalAmount = cart.reduce((total, item) => total + item.price, 0);
+
+            if (totalAmount > 0) {
+                document.getElementById('paymentForm').style.display = 'block';
+            } else {
+                alert("Your cart is empty. Please add items to the cart.");
+            }
+        } 
+
+        function processPayment(event) {
+            event.preventDefault(); // Prevent form submission
+
+            var name = document.getElementById('name').value;
+            var cardNumber = document.getElementById('cardNumber').value;
+            var expiry = document.getElementById('expiry').value;
+            var cvv = document.getElementById('cvv').value;
+
+            // Simulate successful payment
+            var totalAmount = cart.reduce((total, item) => total + item.price, 0);
+            alert(`Payment of ₹${totalAmount} is successful!`);
+
+            // Show payment success message with cardholder's name
+            document.getElementById('confirmationMessage').innerText = `Thank you, ${name}! Your payment of ₹${totalAmount} has been successfully processed.`;
+            document.getElementById('paymentSuccessMessage').style.display = 'block';
+
+            // Hide payment form
+            document.getElementById('paymentForm').style.display = 'none';
+
+            // Clear cart and reset
+            cart = [];
+            updateCartDisplay();
+        }
+    </script>
+    
+</body>
+</html>
